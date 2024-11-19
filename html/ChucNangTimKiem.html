@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Booking App - User Guide</title>
+
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .content-header {
+      margin-bottom: 20px;
+      /* border-bottom: 2px solid var(--accent-color); */
+    }
+    .container {
+      max-width: 100%; /* Ensure it spans the full width */
+      display: flex; /* Flex layout for sidebar and content */
+      flex-direction: row;
+      height: 100%; /* Full height */
+    }
+    #timKiemNhieuThuocTinh div ,
+    #traCuuLichSu div,
+    #xemChiTiet div,
+    #timKiemTheoMaNhanVien div{
+          display: flex;
+        justify-content: center; 
+        align-items: center;  
+      }
+      #timKiemNhieuThuocTinh p{
+          padding-top: 1vh;
+      }
+      /*navbar*/
+    .content .container-fluid,
+    .content .navbar {
+          background-color: #333;
+          padding: 0;
+      }
+      .content .collapse .nav-item .nav-link{
+          color: #fff;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+
+        <img src="../img/logo_tp-rmgb_1.png" alt="" sizes="">
+      </div>
+      <ul class="menu">
+        <li><a href="Overview.html" class="active">Overview</a></li>
+        <li><a href="ChucNangTimKiem.html">Chức năng tìm kiếm</a></li>
+        <li><a href="#booking">Quản lý đặt phòng</a></li>
+        <li><a href="#profile">Quản lý thông tin cá nhân</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="content">
+      <header class="content-header">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item border border-primary"><a class="nav-link" href="#timKiemNhieuThuocTinh">Tìm kiếm
+                    nhiều thuộc tính</a></li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#traCuuLichSu">Tra cứu lịch sử</a>
+                </li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#xemChiTiet">Xem chi tiết phiếu đặt
+                    phòng</a></li>
+                <li class="nav-item border border-primary"><a class="nav-link" href="#timKiemTheoMaNhanVien">Tìm kiếm
+                    phiếu đặt phòng theo mã nhân viên</a></li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="timKiemNhieuThuocTinh">
+        <h3>Tìm kiếm nhiều thuộc tính</h3>
+        <p>Đối với các giá trị có thể chọn, nhấn giữ ctr để chọn nhiều, hoặc nhấn shift để chọn tất cả từ đầu tới vị trí
+          cuối</p>
+        <div><img src="../img/timKiemNhieuThuocTinh1.png" alt="" style="width: 640px;"></div>
+        <p>Đối với các thuộc tính có điều kiện ta nhấn chuột phải để chọn điều kiện phù hợp</p>
+        <div><img src="../img/timKiemNhieuThuocTinh2.png" alt=""></div>
+        <p>Đối với các thuộc tính chọn ngày ta chỉ cần nhấn chuột trái và biểu tượng "lịch" và chọn ngày phù hợp</p>
+        <div><img src="../img/timKiemNhieuThuocTinh3.png" alt=""></div>
+      </section>
+      <section id="traCuuLichSu">
+        <h3>Tra cứu lịch sử tìm kiếm</h3>
+        <p>nhấn chuột phải -> chọn "xem"</p>
+        <div><img src="../img/traCuuLichSu1.png" alt=""></div>
+      </section>
+      <section id="xemChiTiet">
+        <h3>Xem chi tiết phiếu đặt phòng</h3>
+        <p>Nhấn chuột phải vào 1 phiếu bất kì -> chọn xem chi tiết</p>
+        <div><img src="../img/xemChiTiet1.png" alt=""></div>
+        <p>ta sẽ được giao diện chi tiết phiếu đặt phòng như sau:</p>
+        <div><img src="../img/xemChiTiet2.png" alt="" style="width: 100%;"></div>
+      </section>
+      <section id="timKiemTheoMaNhanVien">
+        <h3>Tìm kiếm phiếu đặt phòng theo mã nhân viên <i style="color: gray;">(Chức năng này chỉ áp dụng cho quản
+            lý)</i></h3>
+        <p> Nhấn nút "chọn nhân viên" bạn sẽ được đưa sang trang tìm kiếm nhân viên</p>
+        <div><img src="../img/timKiemTheoMaNhanVien1.png" alt=""></div>
+        <p>Sau đó bạn có thể nhấn ctrl hoặc shift để chọn nhiều -> nhấn nút "Trở lại phiếu đặt phòng"</p>
+        <div><img src="../img/timKiemTheoMaNhanVien2.png" alt=""></div>
+        <p>Bạn sẽ thấy mã nhân viên đã được chọn và cuối cùng nhấn tìm kiếm</p>
+        <div><img src="../img/timKiemTheoMaNhanVien3.png" alt=""></div>
+      </section>
+      <section id="faq">
+        <h3>FAQ</h3>
+        <p>Trả lời các câu hỏi về cách sử dụng app</p>
+      </section>
+    </main>
+
+  </div>
+  <script src="../js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

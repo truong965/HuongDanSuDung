@@ -1,0 +1,97 @@
+/* styles.css */
+
+:root {
+    --background-color: #2b2b2b;
+    --text-color: #e6e6e6;
+    --accent-color: #3c8dbc;
+    --hover-color: #5da1d4;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar .logo h1 {
+    color: var(--accent-color);
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin-bottom: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.menu a.active,
+.menu a:hover {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+
+/* Content styling */
+.content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.content-header {
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.content-header h2 {
+    color: var(--accent-color);
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+}
+
+section p {
+    line-height: 1.6;
+}
